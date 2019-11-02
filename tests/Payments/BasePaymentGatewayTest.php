@@ -38,7 +38,7 @@ class BasePaymentGatewayTest extends TestCase
             'simple provider' => [['s-ok' => true, 's-fail' => false], $simpleSuccess, $simpleFail],
             'lambda provider' => [['l1-ok' => true, 'l1-fail' => false], $lambdaSuccess1, $lambdaFail1],
             'mixed providers' => [
-                ['s-ok' => true, 'l1-ok' => true, 'd2-ok' => true, 'l2-ok' => true, 'l-f1' => true, 'l-f2' => true],
+                ['s-ok' => true, 'l1-ok' => true, 'd2-ok' => true, 'l2-ok' => true, 'l1-fail' => false, 'l2-fail' => false],
                 $simpleSuccess,
                 $lambdaSuccess1,
                 $detailedSuccess2,

@@ -12,7 +12,7 @@ class LambdaProvider
      *
      * Expected structure:
      *  [
-     *      inoices => [
+     *      invoices => [
      *         [
      *              INVOICEID => [CUSTOMER_ID, AMOUNT_USD],
      *         ]
